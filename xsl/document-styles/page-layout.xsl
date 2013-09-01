@@ -47,6 +47,76 @@
 	<!-- included to all document types -->
 	<!-- ISO STANDARDIZED A4,A3,...B4,... -->
 	
+<!-- Letter -->
+	<style:page-layout
+		style:name="Letter-Title">
+		<style:page-layout-properties>
+			<xsl:attribute name="fo:page-width"><xsl:value-of select="$layout.Letter.width"/><xsl:value-of select="$layout.Letter.units"/></xsl:attribute>
+			<xsl:attribute name="fo:page-height"><xsl:value-of select="$layout.Letter.height"/><xsl:value-of select="$layout.Letter.units"/></xsl:attribute>
+			<xsl:attribute name="fo:margin-top"><xsl:value-of select="$layout.Letter.margin-top"/><xsl:value-of select="$layout.Letter.units"/></xsl:attribute>
+			<xsl:attribute name="fo:margin-bottom"><xsl:value-of select="$layout.Letter.margin-bottom"/><xsl:value-of select="$layout.Letter.units"/></xsl:attribute>
+			<xsl:attribute name="fo:margin-left"><xsl:value-of select="$layout.Letter.margin-left"/><xsl:value-of select="$layout.Letter.units"/></xsl:attribute>
+			<xsl:attribute name="fo:margin-right"><xsl:value-of select="$layout.Letter.margin-right"/><xsl:value-of select="$layout.Letter.units"/></xsl:attribute>
+			<xsl:attribute name="style:num-format">1</xsl:attribute>
+			<xsl:attribute name="style:print-orientation">portrait</xsl:attribute>
+			<xsl:attribute name="style:writing-mode">lr-tb</xsl:attribute>
+			<xsl:attribute name="style:footnote-max-height">0cm</xsl:attribute>
+		</style:page-layout-properties>
+		<style:header-style>
+			<style:header-footer-properties>
+				<xsl:attribute name="svg:height"><xsl:value-of select="$layout.Letter.title.header.height"/><xsl:value-of select="$layout.Letter.units"/></xsl:attribute>
+				<xsl:attribute name="fo:margin-top"><xsl:value-of select="$layout.Letter.header.margin-top"/><xsl:value-of select="$layout.Letter.units"/></xsl:attribute>
+				<xsl:attribute name="fo:margin-bottom"><xsl:value-of select="$layout.Letter.header.margin-bottom"/><xsl:value-of select="$layout.Letter.units"/></xsl:attribute>
+				<xsl:attribute name="fo:margin-left"><xsl:value-of select="$layout.Letter.header.margin-left"/><xsl:value-of select="$layout.Letter.units"/></xsl:attribute>
+				<xsl:attribute name="fo:margin-right"><xsl:value-of select="$layout.Letter.header.margin-right"/><xsl:value-of select="$layout.Letter.units"/></xsl:attribute>
+			</style:header-footer-properties>
+		</style:header-style>
+		<style:footer-style>
+			<style:header-footer-properties>
+				<xsl:attribute name="fo:min-height"><xsl:value-of select="$layout.Letter.footer.min-height"/><xsl:value-of select="$layout.Letter.units"/></xsl:attribute>
+				<xsl:attribute name="fo:margin-top"><xsl:value-of select="$layout.Letter.footer.margin-top"/><xsl:value-of select="$layout.Letter.units"/></xsl:attribute>
+				<xsl:attribute name="fo:margin-bottom"><xsl:value-of select="$layout.Letter.footer.margin-bottom"/><xsl:value-of select="$layout.Letter.units"/></xsl:attribute>
+				<xsl:attribute name="fo:margin-left"><xsl:value-of select="$layout.Letter.footer.margin-left"/><xsl:value-of select="$layout.Letter.units"/></xsl:attribute>
+				<xsl:attribute name="fo:margin-right"><xsl:value-of select="$layout.Letter.footer.margin-right"/><xsl:value-of select="$layout.Letter.units"/></xsl:attribute>
+				<xsl:attribute name="fo:border-top"><xsl:value-of select="$layout.Letter.footer.border-top"/></xsl:attribute>
+			</style:header-footer-properties>
+		</style:footer-style>
+	</style:page-layout>
+	<style:page-layout
+		style:name="Letter">
+		<style:page-layout-properties>
+			<xsl:attribute name="fo:page-width"><xsl:value-of select="$layout.Letter.width"/><xsl:value-of select="$layout.Letter.units"/></xsl:attribute>
+			<xsl:attribute name="fo:page-height"><xsl:value-of select="$layout.Letter.height"/><xsl:value-of select="$layout.Letter.units"/></xsl:attribute>
+			<xsl:attribute name="fo:margin-top"><xsl:value-of select="$layout.Letter.margin-top"/><xsl:value-of select="$layout.Letter.units"/></xsl:attribute>
+			<xsl:attribute name="fo:margin-bottom"><xsl:value-of select="$layout.Letter.margin-bottom"/><xsl:value-of select="$layout.Letter.units"/></xsl:attribute>
+			<xsl:attribute name="fo:margin-left"><xsl:value-of select="$layout.Letter.margin-left"/><xsl:value-of select="$layout.Letter.units"/></xsl:attribute>
+			<xsl:attribute name="fo:margin-right"><xsl:value-of select="$layout.Letter.margin-right"/><xsl:value-of select="$layout.Letter.units"/></xsl:attribute>
+			<xsl:attribute name="style:num-format">1</xsl:attribute>
+			<xsl:attribute name="style:print-orientation">portrait</xsl:attribute>
+			<xsl:attribute name="style:writing-mode">lr-tb</xsl:attribute>
+			<xsl:attribute name="style:footnote-max-height">0cm</xsl:attribute>
+		</style:page-layout-properties>
+		<style:header-style>
+			<style:header-footer-properties>
+				<xsl:attribute name="fo:min-height"><xsl:value-of select="$layout.Letter.header.min-height"/><xsl:value-of select="$layout.Letter.units"/></xsl:attribute>
+				<xsl:attribute name="fo:margin-top"><xsl:value-of select="$layout.Letter.header.margin-top"/><xsl:value-of select="$layout.Letter.units"/></xsl:attribute>
+				<xsl:attribute name="fo:margin-bottom"><xsl:value-of select="$layout.Letter.header.margin-bottom"/><xsl:value-of select="$layout.Letter.units"/></xsl:attribute>
+				<xsl:attribute name="fo:margin-left"><xsl:value-of select="$layout.Letter.header.margin-left"/><xsl:value-of select="$layout.Letter.units"/></xsl:attribute>
+				<xsl:attribute name="fo:margin-right"><xsl:value-of select="$layout.Letter.header.margin-right"/><xsl:value-of select="$layout.Letter.units"/></xsl:attribute>
+			</style:header-footer-properties>
+		</style:header-style>
+		<style:footer-style>
+			<style:header-footer-properties>
+				<xsl:attribute name="svg:height"><xsl:value-of select="$layout.Letter.footer.height"/><xsl:value-of select="$layout.Letter.units"/></xsl:attribute>
+				<xsl:attribute name="fo:margin-top"><xsl:value-of select="$layout.Letter.footer.margin-top"/><xsl:value-of select="$layout.Letter.units"/></xsl:attribute>
+				<xsl:attribute name="fo:margin-bottom"><xsl:value-of select="$layout.Letter.footer.margin-bottom"/><xsl:value-of select="$layout.Letter.units"/></xsl:attribute>
+				<xsl:attribute name="fo:margin-left"><xsl:value-of select="$layout.Letter.footer.margin-left"/><xsl:value-of select="$layout.Letter.units"/></xsl:attribute>
+				<xsl:attribute name="fo:margin-right"><xsl:value-of select="$layout.Letter.footer.margin-right"/><xsl:value-of select="$layout.Letter.units"/></xsl:attribute>
+				<xsl:attribute name="fo:border-top"><xsl:value-of select="$layout.Letter.footer.border-top"/></xsl:attribute>
+			</style:header-footer-properties>
+		</style:footer-style>
+	</style:page-layout>
+	
 <!-- A4 -->
 	<style:page-layout
 		style:name="A4">
