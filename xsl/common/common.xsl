@@ -116,5 +116,8 @@
 	<xsl:value-of select="count(preceding::informaltable)+count(preceding::table)+1"/>
 </xsl:template>
 
+<xsl:template name="footnote.number">
+	<xsl:value-of select="count(preceding::footnote)+1"/>
+</xsl:template>
 
 </xsl:stylesheet>
