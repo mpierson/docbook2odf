@@ -120,4 +120,10 @@
 	<xsl:value-of select="count(preceding::footnote)+1"/>
 </xsl:template>
 
+<!-- top level sections -->
+<xsl:template name="section.number">
+	<xsl:value-of select="count(preceding::section)+1"/>
+</xsl:template>
+
+
 </xsl:stylesheet>

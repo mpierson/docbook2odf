@@ -52,6 +52,11 @@
 		<xsl:call-template name="section.level"/>
 	</xsl:variable>
 	
+  <!-- any preceeding sections ? -->
+	<xsl:variable name="sectNum">
+		<xsl:call-template name="section.number"/>
+	</xsl:variable>
+	
 	<xsl:comment>
 		<xsl:text>section level </xsl:text><xsl:value-of select="$level"/>
 	</xsl:comment>
@@ -66,6 +71,9 @@
 	      <xsl:value-of select="$level + 1"/>
 	    </xsl:if>
 	    <xsl:if test="$level &gt; 4"><xsl:text>s</xsl:text></xsl:if>
+      <!-- uncomment to use page break version of style for first section
+      <xsl:if test="$sectNum = 1"><xsl:text>WithBreak</xsl:text></xsl:if>
+      -->
 	  </xsl:attribute>
 	  <xsl:value-of select="child::docbook:info/docbook:title"/>
 	</text:h>
