@@ -111,6 +111,18 @@
 	</text:span>
 </xsl:template>
 
+<xsl:template match="docbook:phrase">
+	<text:span>
+		<xsl:attribute name="text:style-name">
+			<xsl:choose>
+				<xsl:when test="@role='highlight'">text-highlight</xsl:when>
+				<xsl:otherwise>text-strong</xsl:otherwise>
+			</xsl:choose>
+		</xsl:attribute>
+		<xsl:apply-templates/>
+	</text:span>
+</xsl:template>
+
 
 <xsl:template match="docbook:superscript">
 	<text:span>
