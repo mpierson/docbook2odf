@@ -97,12 +97,12 @@
 	<table:table-row>
 		<xsl:comment>empty cell (only used for padding content)</xsl:comment>
 		<table:table-cell
-			office:value-type="sting"
+			office:value-type="string"
 			table:style-name="table-info.cell-A">
 			<text:p/>
 		</table:table-cell>
 		<table:table-cell
-			office:value-type="sting"
+			office:value-type="string"
 			table:style-name="table-info.cell-A">
 			<xsl:choose>
 				<!-- when element has no childs -->
