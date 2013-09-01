@@ -184,7 +184,7 @@
 			</text:p>
 		</table:table-cell>
 		<table:table-cell
-			office:value-type="sting"
+			office:value-type="string"
 			table:style-name="table-default.cell-C5">
 			<xsl:choose>
 				<!-- when element has no childs -->
