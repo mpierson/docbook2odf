@@ -217,6 +217,11 @@
 					text:min-label-distance="0.3cm"/>
 			</text:list-level-style-number>
 		</text:list-style>
+
+  <style:style style:name="footnote-default" style:family="paragraph" style:parent-style-name="Footnote" style:class="extra">
+   <style:paragraph-properties fo:margin="100%" fo:margin-left="0.2354in" fo:margin-right="0in" fo:margin-top="0in" fo:margin-bottom="0in" style:contextual-spacing="false" fo:text-indent="-0.2354in" style:auto-text-indent="false" text:number-lines="false" text:line-number="0"/>
+   <style:text-properties fo:font-size="8pt" style:font-size-asian="10pt" style:font-size-complex="10pt"/>
+  </style:style>
 		
 		<!-- tomuto este nerozumiem -->
 			
